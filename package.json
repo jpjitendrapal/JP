@@ -1,0 +1,24 @@
+{
+  "name": "jitendra",
+  "version": "1.0.0",
+  "description": "this is my own project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpjitendrapal/JP.git"
+  },
+  "author": "Jitendra Pal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpjitendrapal/JP/issues"
+  },
+  "homepage": "https://github.com/jpjitendrapal/JP#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
