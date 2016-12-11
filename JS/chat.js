@@ -11,7 +11,7 @@ JP = JP || {};
 JP.chat = (function(){
     var config = {
         timer: 3000,
-        timerId: 0
+        timerId: -1
     }
     $zopim(function() {
         var timerId;

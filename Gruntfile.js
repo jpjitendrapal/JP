@@ -8,11 +8,11 @@ module.exports = function (grunt) {
 
       },
       JS: {
-        src: ['JS/firstTemplate.js', 'JS/index.js'],
+        src: "JS/*.js",
         dest: 'build/JS/scripts.js',
       },
       CSS: {
-        src: ["CSS/index.css", "CSS/about.css"],
+        src: "CSS/*.css",
         dest: "build/CSS/styles.css"
       }
     },

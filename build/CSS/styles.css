@@ -1,5 +1,8 @@
-/*this is index.css*/
 /*this is about.css*/
 body{
     color: red;
+}
+/*this is index.css*/
+body{
+    font-size: 25px;
 }
