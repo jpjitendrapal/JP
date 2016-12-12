@@ -2,3 +2,9 @@
 body{
     font-size: 25px;
 }
+.chat-close-icon{
+    position: fixed;
+    bottom: 56px;
+    right: 30px;
+    color: green;
+}

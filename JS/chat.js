@@ -9,10 +9,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 JP = JP || {};
 
 JP.chat = (function(){
-    var config = {
-        timer: 3000,
-        timerId: -1
-    }
+    
     $zopim(function() {
         var timerId;
         $("body").on("touchstart",".zopim", function(){ 
@@ -32,6 +29,10 @@ JP.chat = (function(){
     });
 
     function showCloseIcon(elem){
-        $(".zopim").hide(); 
+        var closeIcon = "<div class='chat-close-icon'><i class='fa fa-close'></i></div>";
+        $("body").append(closeIcon);
+         $("body").on("click", ".chat-close-icon", function(){
+            $(".zopim, .chat-close-icon").hide(); 
+        }); 
     }
 })();
