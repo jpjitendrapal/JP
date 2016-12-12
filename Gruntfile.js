@@ -25,18 +25,39 @@ module.exports = function (grunt) {
         },
       },
       CSS: {
-        files:["CSS/**/*.css"],
+        files: ["CSS/**/*.css"],
         tasks: ["concat:CSS"],
+      }
+    },
+    react: {
+      files: {
+        expand: true,
+        cwd: 'JS/',
+        src: ['*.jsx'],
+        dest: 'build/JSX/main',
+        ext: '.js',
+        tasks: ["concat"]
+      }
+    },
+    browserify: {
+      options: {
+        transform: [require('grunt-react').browserify]
+      },
+      app: {
+        src: 'build/JSX/main.js',
+        dest: 'path/to/target/output.js'
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-react');
+  grunt.loadNpmTasks('grunt-browserify');
 
   grunt.registerTask('test', function () {
     console.log("I am testing");
   });
-  grunt.registerTask('default', ['concat', 'watch']);
+  grunt.registerTask('default', ['concat', 'react', 'watch']);
 
 };
