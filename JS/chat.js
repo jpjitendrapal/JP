@@ -33,7 +33,7 @@ JP.chat = (function () {
     });
 
     function showCloseIcon(elem) {
-        var closeIcon = "<div class='chat-close-icon'><i class='fa fa-close'></i></div>",
+        var closeIcon = "<div class='chat-close-icon'><i class='fa fa-window-close-o'></i></div>",
             mask = "<div class='sd-mask'></div>"
             ;
         if ($(".sd-mask") && $(".sd-mask").length < 1) {

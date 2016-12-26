@@ -33,7 +33,7 @@ JP.chat = (function () {
     });
 
     function showCloseIcon(elem) {
-        var closeIcon = "<div class='chat-close-icon'><i class='fa fa-close'></i></div>",
+        var closeIcon = "<div class='chat-close-icon'><i class='fa fa-window-close-o'></i></div>",
             mask = "<div class='sd-mask'></div>"
             ;
         if ($(".sd-mask") && $(".sd-mask").length < 1) {
@@ -61,3 +61,16 @@ JP.main = (function(){
     return {};
 })();
 
+
+(function () {
+    function getText(name) {
+        var textVal = "";
+        if (name = (new RegExp('[?&]' + encodeURIComponent(name) + '=([^&]*)')).exec(window.location.search)) {
+            textVal = decodeURIComponent(name[1]).split("+").join(" ");
+        }
+        return textVal;
+    }
+
+    var container = document.getElementById("wish-text");
+    container.innerText = getText("name") || "";
+})();

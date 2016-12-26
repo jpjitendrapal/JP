@@ -1,0 +1,46 @@
+body{
+    background-color: darkgreen;
+    background: url("../images/star.gif");
+}
+.mainCt{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#wish-text{
+    max-width: 320px;
+    margin: 0 auto;
+    position: absolute;
+    font-size: 35px;
+    font-family: cursive;
+    color: red;
+    text-align: center;
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%);
+    
+}
+@media screen and (min-width: 480px ){
+    #wish-text{
+        max-width: 420px;   
+        font-size: 38px;     
+    }
+}
+@media screen and (min-width: 680px ){
+    #wish-text{
+        max-width: 520px; 
+        font-size: 40px;       
+    }
+}
+@media screen and (min-width: 1300px ){
+    #wish-text{
+        max-width: 720px;    
+        font-size: 47px;    
+    }
+}
+
+#blog-link{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}

@@ -10,7 +10,6 @@ body{
     position: fixed;
     bottom: 56px;
     right: 30px;
-    color: green;
     z-index: 10;
 }
 .sd-mask{
@@ -21,4 +20,88 @@ body{
     opacity: 0.5;
     width: 100vw;
     height: 100vh;
+}
+
+
+body { background-color:#333; }
+#snow{
+	background: none;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
+body{
+    background-color: darkgreen;
+    background: url("../images/star.gif");
+}
+.mainCt{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#wish-text{
+    max-width: 320px;
+    margin: 0 auto;
+    position: absolute;
+    font-size: 35px;
+    font-family: cursive;
+    color: red;
+    text-align: center;
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%);
+    
+}
+@media screen and (min-width: 480px ){
+    #wish-text{
+        max-width: 420px;   
+        font-size: 38px;     
+    }
+}
+@media screen and (min-width: 680px ){
+    #wish-text{
+        max-width: 520px; 
+        font-size: 40px;       
+    }
+}
+@media screen and (min-width: 1300px ){
+    #wish-text{
+        max-width: 720px;    
+        font-size: 47px;    
+    }
+}
+
+#blog-link{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
 }
